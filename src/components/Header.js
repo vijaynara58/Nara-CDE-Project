@@ -40,13 +40,13 @@ function Header() {
                 <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap">
                     {/* First Custom Utility Class "link" created in globals.css*/}
                     <div onClick={ !session ? signIn : signOut } className="link">
-                         <p>
+                         <p className="hover:underline">
                              {/* We use back ticks for string interpolation */}
                             {session ? `Hello, ${session.user.name}` : "Sign In"}
                          </p>
                          <p className="font-extrabold md:text-sm">Account & Lists</p>
                     </div>
-                    <div className="link">
+                    <div onClick={() => session && router.push("/orders")} className="cursor-pointer link">
                          <>Returns</>
                          <p className="font-extrabold md:text-sm">& Orders</p>
                     </div>
