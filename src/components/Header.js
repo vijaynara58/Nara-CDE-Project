@@ -1,9 +1,10 @@
 import Image from "next/image";
-import { MenuIcon, SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline"
+import { LinkIcon, MenuIcon, SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline"
 import { signIn, signOut, useSession } from "next-auth/client"
 import {useRouter} from "next/router"
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
+import Video from "../pages/Video"
 
 function Header() {
     //We use "useSession() hook" to access the current session state
@@ -70,16 +71,16 @@ function Header() {
                     <MenuIcon className="h-6 mr-1" />
                     All
                 </p>
-                <p className="link">Nara Video</p>
-                <p className="link">Nara Business</p>
-                <p className="link">Today's Deals</p>
-                <p className="link hidden lg:inline-flex">Electronics</p>
-                <p className="link hidden lg:inline-flex">Food & Grocery</p>
-                <p className="link hidden lg:inline-flex">Prime</p>
-                <p className="link hidden lg:inline-flex">Buy Again</p>
-                <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
-                <p className="link hidden lg:inline-flex">Health & Personal Care</p>
-
+                <p onClick={()=>router.push('/Video')} 
+                className="link">Nara Video</p>
+                <p onClick={()=>router.push('https://vijaynara58.github.io/FlippingCardProfile')} className="link">Nara Business</p>
+                <p onClick={()=>router.push('https://vijaynara58.github.io/AnimatedButtons/')} className="link">Designed Buttons</p>
+                <p onClick={()=>router.push('https://vijaynara58.github.io/loginformresponsive')} className="link hidden lg:inline-flex">Form Design</p>
+                <p onClick={()=>router.push('https://vijaynara58.github.io/responsive-web')} className="link hidden lg:inline-flex">responsive-web</p>
+                <p onClick={()=>router.push('https://contact-vijaynara-i38k5ri1i-vijaynara58.vercel.app/#contact')} className="link hidden lg:inline-flex">Contact Us</p>
+                <p onClick={()=>router.push('https://contact-vijaynara-i38k5ri1i-vijaynara58.vercel.app/')} className="link hidden lg:inline-flex">Portfolio</p>
+                <p onClick={()=>router.push('https://vijaynara58.github.io')} className="link hidden lg:inline-flex">Resume</p>
+                <p onClick={()=>router.push('https://easyhotmail.wordpress.com')} className="link hidden lg:inline-flex">Wordpress blogs</p>
             </div>
         </header>
     )
