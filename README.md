@@ -23,7 +23,9 @@ Run commands
 3) ```yarn run dev```
 
 
-### If you see the window below then you are set to build AMAZON 2.0!
+### A Look of the Interface
 
 ![ppt1](https://user-images.githubusercontent.com/62456972/120900919-9dd43b80-c605-11eb-81e9-f57f1c52e065.PNG)
+
+## Try the Application https://nara-cde-project.vercel.app/
 
