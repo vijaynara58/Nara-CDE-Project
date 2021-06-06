@@ -25,7 +25,8 @@ Run commands
 
 ### If you see the window below then you are set to build NARA SHOPPING APP!
 
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+![home](https://user-images.githubusercontent.com/62456972/120936441-c3c91100-c6d5-11eb-8507-6a5188a701ac.PNG)
+
 
 ### If you want to run the application on your local host: you will need to run the command : npm run dev
 
